@@ -12,6 +12,9 @@
 	}
 	.font-xs {
 		font-size: 50%;
+		color: blue;
+		text-decoration: bold;
+		text-align: center;
 	}
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -32,6 +35,9 @@
 	}	
 	.font-sm {
 		font-size: 75%;
+		color: blue;
+		text-decoration: bold;
+		text-align: center;
 	}
 }
 @media only screen and (min-width: 992px) {
@@ -77,6 +83,9 @@
 	}	
 	.font-md {
 		font-size: 100%;
+		color: blue;
+		text-decoration: bold;
+		text-align: center;
 	}
 }
 
