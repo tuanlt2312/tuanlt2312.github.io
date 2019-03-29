@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&amp;subset=vietnamese" rel="stylesheet">
+		<link href="style.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<style>
+			h3 {
+				text-align: center;
+				padding: 2%;
+			}
+			h1 {
+				text-align: left;
+				padding: 2%;
+				color: blue;
+			}
+			img {
+				width: 100%;
+				height: auto;
+				padding: 2%;
+				border: solid 2px;
+			}
+		</style>
+	</head>
+	<body class="container-fluid">
+		<div class="row font-xs font-sm font-md" style="position: fixed;width: 100%; background-color: lightblue;z-index: 100;max-height: 20%;">
+			<ul>
+				<a class="col-xs-6 col-sm-6 col-md-2 list-unstyled" href="./home.html" target="_self"><li class="text-nowrap text-justify text-uppercase navbar-text">Home</li></a>
+				<a class="col-xs-6 col-sm-6 col-md-2 list-unstyled" href="./nhatrangblog.html" target="_self"><li class="text-nowrap text-justify text-uppercase navbar-text">Nha Trang Blog</li></a>
+				<a class="col-xs-6 col-sm-6 col-md-2 list-unstyled" href="./history.html" target="_self"><li class="text-nowrap text-justify text-uppercase navbar-text">History places</li></a>
+				<a class="col-xs-6 col-sm-6 col-md-2 list-unstyled" href="./mustsee.html" target="_self"><li class="text-nowrap text-justify text-uppercase navbar-text">Must SEE</li></a>
+				<a class="col-xs-6 col-sm-6 col-md-2 list-unstyled" href="./food.html" target="_self"><li class="text-nowrap text-justify text-uppercase navbar-text">Foods</li></a>
+				<a class="col-xs-6 col-sm-6 col-md-2 list-unstyled" href="./hotel.html" target="_self"><li class="text-nowrap text-justify text-uppercase navbar-text">Hotel</li></a>
+			</ul>
+		</div>
+		<div class="container content xscontent smcontent">
+			<h1 class="w3-center">NHA TRANG THÀNH PHỐ TÌNH YÊU VÀ NỔI NHỚ</h2>
+			<div class="container cols-xs-12 cols-sm-12 cols-md-12">
+  				<img class="mySlides" src="./picture/1.jpg" style="width:100%; max-height: 500px;">
+				<img class="mySlides" src="./picture/2.jpg" style="width:100%; max-height: 500px;">
+				<img class="mySlides" src="./picture/3.jpg" style="width:100%; max-height: 500px;">
+				<img class="mySlides" src="./picture/4.jpg" style="width:100%; max-height: 500px;">
+				<img class="mySlides" src="./picture/5.jpg" style="width:100%; max-height: 500px;">
+				<img class="mySlides" src="./picture/6.jpg" style="width:100%; max-height: 500px;">
+				<img class="mySlides" src="./picture/7.jpg" style="width:100%; max-height: 500px;">
+				<img class="mySlides" src="./picture/8.jpg" style="width:100%; max-height: 500px;">
+				<img class="mySlides" src="./picture/9.jpg" style="width:100%; max-height: 500px;">
+				<img class="mySlides" src="./picture/10.jpg" style="width:100%; max-height: 500px;">
+				<img class="mySlides" src="./picture/11.jpg" style="width:100%; max-height: 500px;">
+				<img class="mySlides" src="./picture/12.jpg" style="width:100%; max-height: 500px;">
+			</div>
+			
+		</div>
+		<script>
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+  				var i;
+  				var x = document.getElementsByClassName("mySlides");
+  				for (i = 0; i < x.length; i++) {
+    				x[i].style.display = "none";  
+  				}
+  			myIndex++;
+  			if (myIndex > x.length) {myIndex = 1}    
+  			x[myIndex-1].style.display = "block";  
+  			setTimeout(carousel, 3000); // Change image every 5 seconds
+			}
+			
+		</script>
+	</body>
+</html>
