@@ -9,16 +9,17 @@
 	float: left;
 }
 h3 {
-	text-align: center;
+	text-align: left;
 	padding: 2%;
 }
 h1 {
 	text-align: left;
 	padding: 2%;
-	color: blue;
+	color: #39F1E9;
 }
 p {
-	text-align: center;
+	text-align: right;
+	text-decoration: italic;
 }
 .xsbackcolor {
 	background-color: black;
